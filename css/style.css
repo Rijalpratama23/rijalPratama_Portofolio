@@ -1,0 +1,733 @@
+:root {
+    --bg: #222222;
+    --var: rgb(220, 220, 33);
+    --bgvar: #333333;
+    --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+body {
+    font-family: 'Montserrat';
+}
+
+/* Header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.6rem 10%;
+    height: 1.5rem;
+    border-bottom: 1px solid var(--var);
+    box-shadow: 5px;
+}
+.paragrap-hero h1, h3 {
+    font-size: 1.7rem;
+}
+header .logo img{
+    font-weight: bold;
+    color: var(--white);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+span {
+    color: var(--var)
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    gap: 2rem;
+    transition: .3s;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.home {
+    color: var(--var);
+}
+nav ul li a:hover  {
+    color: var(--var);
+    transition: .3s ease-in-out;
+    border-bottom: 1px solid var(--var);
+}
+nav ul li a:active {
+    color: var(--white);
+}
+header #hamburger-menu {
+    color: var(--white);
+    font-size: 1.2rem;
+    display: none;
+}
+header #hamburger-menu:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* HERO STAR */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    background-color: var(--bgvar);
+    color: var(--white);
+}
+.gambar-hero img {
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 10px rgb(116, 116, 1);
+    animation: imageflow  4s ease-in-out infinite;
+}
+@keyframes imageflow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.gambar-hero img:hover {
+    border-radius: 50px;
+    transition: .5s all;
+}
+
+/* CSS to Write/ketikan */
+.paragrap-hero {
+    line-height: 1.6rem;
+}
+.paragrap-hero .span {
+    position: relative;
+}
+.paragrap-hero .span::before {
+    content: "FrontEnd";
+    color: var(--var);
+    animation: words 20s infinite;
+}
+.paragrap-hero .span::after {
+    content:" ";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var(--bgvar);
+    border-left: 2px solid var(--var);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--var);
+    }
+}
+@keyframes words {
+    0%,20% {
+        content: "Youtuber";
+    }
+    21%,40% {
+        content: "web Dev";
+    }
+    41%,60% {
+        content: "UI/UX";
+    }
+    61%,80% {
+        content: "BackEnd";
+    }
+    81%,100% {
+        content: "FrontEnd";
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px); 
+    }
+}
+
+.paragrap-hero h4 {
+    font-size: 1.7rem;
+}
+.paragrap-hero h1 {
+    font-size: 1.9rem;
+    line-height: 2rem
+}
+.sosial-media {
+    display: flex;
+}
+.sosial-media a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--var);
+    display: flex;
+}
+.sosial-media a:hover {
+    color: var(--white);
+    border-radius: 100%;
+}
+.sosial-media a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    width: 20%
+}
+/* END HERO */
+
+/* ABOUT STAR */
+.about {
+    min-height: 100vh;
+    color: var(--white);
+    padding: 7rem 7% 1.4rem;
+    background-color: var(--bg);
+}
+.about h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.about .content-about {
+    display: flex;
+    padding: 5rem 4% 1.3rem;
+}
+.about .paragrap-about {
+    display: block;
+    padding: 3rem 7% 1.3rem;
+    line-height: 1.3rem;
+}
+.content-about figure img{
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px 10px rgb(116, 116, 1) ;
+    animation: gambarAbout 4s ease-in-out infinite;
+}
+@keyframes gambarAbout {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.about figure img:hover {
+    border-radius: 50px;
+    transition: .5s all;
+}
+.paragrap-about .hereme-about {
+    background-color: var(--var);
+    text-align: center;
+    margin: 45px;
+    width: 170px;
+    padding: 12px;
+    border-radius: 15px;
+}
+.hereme-about a {
+    text-decoration: none;
+    color: var(--bg);
+    font-weight: bold;
+}
+.hereme-about a:hover {
+    font-weight: 9000;
+    color: rgba(13, 90, 255, 0.942);
+}
+/* END ABOUT */
+
+/* SKILL STAR */
+.skills {
+    min-height: 100vh;
+    background-color: var(--bgvar);
+    padding: 7rem 7% 1.4rem;
+}
+.skills h2 {
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+}
+.content-skills .paragrap-skills {
+    text-align: center;
+    color: var(--white);
+    padding: 1.3rem;
+}
+.skills .gambar-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 7% 1.4rem;
+}
+.gambar-skills .html {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgb(253, 81, 7);
+}
+.gambar-skills .html a {
+    color: rgb(253, 81, 7);
+    font-size: 3rem;
+}
+.gambar-skills .html a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+}
+.gambar-skills .css {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgba(57, 136, 255, 0.928);
+}
+.gambar-skills .css a {
+    color: rgba(57, 136, 255, 0.928);
+    font-size: 3rem;
+}
+.gambar-skills .css a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+}
+.gambar-skills .javaScript {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid var(--var);
+}
+.gambar-skills .javaScript a {
+    color: var(--var);
+    font-size: 3rem;
+}
+.gambar-skills .javaScript a:hover {
+    color: var(--white);
+    transition: .3s ease-in-out;
+}
+.gambar-skills .python {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgb(105, 250, 57);
+}
+.gambar-skills .python a {
+    color: rgb(105, 250, 57);
+    font-size: 3rem;
+}
+.gambar-skills .python a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+}
+.gambar-skills .php {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgb(0, 187, 255);
+}
+.gambar-skills .php a {
+    color: rgb(0, 187, 255);
+    font-size: 3rem;
+}
+.gambar-skills .php a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+}
+.gambar-skills .bootsrap {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgb(239, 104, 248);
+}
+.gambar-skills .bootsrap a {
+    color:  rgb(239, 104, 248);
+    font-size: 3rem;
+}
+.gambar-skills .bootsrap a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
+}
+.content-skills .hereme-skills {
+    background-color: var(--var);
+    margin: 45px auto;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    width: 170px;
+}
+.gambar-skills .html, .css, .python, 
+.php, .javaScript, .bootsrap {
+    animation: mengambang 4s ease-in-out infinite;
+}
+@keyframes mengambang {
+    0% {
+        transform: translateY(2);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.hereme-skills a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bg);
+}
+.hereme-skills a:hover {
+    color: blue;
+}
+/* END SKILL */
+
+/* STAR EDUCATION */
+.education {
+    min-height: 100vh;
+    background-color: var(--bg);
+    padding: 7rem 7% 1.4rem
+}
+.education h2 {
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+}
+.education .container-education {
+    padding: 5rem 7% 1.4rem;
+    color: var(--white);
+}
+.container-education .content-utama {
+    display: flex;
+    justify-content: space-between;
+}
+.content-utama .content img {
+    border-radius: 15px;
+    width: 200px;
+    height: 167px;
+}
+.content-utama .content {
+    display: flex;
+    border: 1px solid var(--var);
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 6px rgb(116, 116, 1);
+}
+.content-utama .content .asset {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container-education .linkdetail {
+    margin: 5rem 5% 1.3rem;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+.linkdetail .smk a span {
+    color: black;
+}
+.linkdetail .univers a span {
+    color: black;
+}
+.container-education .linkdetail 
+.smk a {
+    display: inline;
+    justify-content: left;
+    text-decoration: none;
+    color: var(--bg);
+    font-weight: bold;
+    background-color: var(--var);
+    padding: 12px;
+    border-radius: 15px;
+}
+.container-education .linkdetail 
+.smk a:hover {
+    color: blue;
+    font-weight: bold;
+}
+.container-education .linkdetail 
+.univers a {
+    display: inline;
+    justify-content: left;
+    text-decoration: none;
+    text-align: center;
+    color: var(--bg);
+    font-weight: bold;
+    background-color: var(--var);
+    padding: 12px;
+    border-radius: 15px;
+}
+.container-education .linkdetail 
+.univers a:hover {
+    color: blue;
+    font-weight: bold;
+}
+/* END EDUCATION */
+
+/* CONTACT STAR */
+.contact {
+    min-height: 100vh;
+    background-color: var(--bgvar);
+    padding: 7rem 7% 1.6rem;
+    color: var(--white);
+}
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: var(--bg);
+}
+.contact h2 {
+    text-align: center;
+}
+.contact p {
+    text-align: center;
+    padding: 1.6rem;
+}
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border: 1px solid var(--var);
+    padding-left: 1.6rem;
+}
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background: none;
+    color: var(--white);
+}
+.contact .row form .input-group i {
+    padding-left: -20px;
+    font-size: 1.6rem;
+}
+.contact .row form button {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem ;
+    font-size: 1.5rem;
+    color: var(--bg);
+    background-color: var(--var);
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* END CONTACT */
+footer {
+    min-height: 20vh;
+    background-color: var(--bg);
+    color: var(--white);
+}
+footer h4 {
+    text-align: center;
+    padding: 5px;
+}
+footer .btn {
+    text-align: center;
+    padding: 1rem;
+}
+footer .btn a{
+    text-decoration: none;
+    color: var(--var);
+    margin: 5px;
+}
+footer .btn a i {
+    text-align: center;
+    font-size: 1.6rem;
+}
+footer .btn a i:hover {
+    color: var(--white);
+}
+footer .credit {
+    text-align: center;
+}
+footer .credit a {
+    text-decoration: none;
+    color: var(--var);
+}
+/* END FOOTER */
+
+/* media queris */
+
+/* ini ukuran dekstop */
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+/* media queries Tablet */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    header nav ul{
+        flex-direction: column;
+        width: 100%;
+        padding: 40vh 7% 1.6rem;
+        background-color: var(--bg);
+        border-radius: 20px;
+        text-align: center;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    header #hamburger-menu {
+        display: block;
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    .hero {
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 12rem 30% 1.7rem;
+        align-items: center;
+    }
+    br {
+        display: none;
+    }
+    .hero p {
+        text-align: left;
+        font-size: 20px;
+    }
+    .hero .sosial-media i{
+        text-align: center;
+    }
+    .hero .gambar-hero {
+        text-align: center;
+        padding-top: 8px;
+        margin-top: 30px;
+    }
+    .skills {
+        display: inline-block;
+        justify-content: space-between;
+    }
+    .skills .gambar-skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .education .content-utama {
+        flex-wrap: wrap;
+        
+    }
+    footer {
+        padding: 4rem 3% 1.6rem;
+    }
+}
+
+/* media Queries Mobile/hp */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 90%;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    br {
+        display: none;
+    }
+    .about .content-about {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .about .content-about p {
+        text-align: start;
+    }
+    .skills {
+        display: block;
+    }
+    .skills .gambar-skills .html,
+    .css, .javaScript, .bootsrap, .php, .python{
+        width: 200px;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .education h2,p,h4{
+        text-align: center;
+    }
+    .content-utama .content {
+        display: block;
+        padding: 30px;
+    }
+    .linkdetail {
+        display: flex;
+        justify-content: center;
+    }
+    .linkdetail .univers {
+        text-align: center;
+    }
+    #container-smk {
+        width: 264px;
+        text-align: start;
+    }
+    .smk span, .univers span {
+        display: none;
+    }
+    .contact .row {
+        display: block;
+        flex-wrap: wrap;
+        border-radius: 15px;
+    }
+    footer {
+        min-height: 8vh;
+    }
+    footer .content-footer {
+        display: block;
+        align-items: start;
+    }
+}
+
+
+
+
+
+
+
+
+
+

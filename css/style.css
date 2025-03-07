@@ -277,8 +277,10 @@ header #hamburger-menu:hover {
 }
 .skills .gambar-skills {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5rem 7% 1.4rem;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .gambar-skills .html {
     background-color: var(--bg);
@@ -376,6 +378,18 @@ header #hamburger-menu:hover {
     color: var(--var);
     transition: .3s ease-in-out;
 }
+.gambar-skills .react {
+    background-color: var(--bg);
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2.6rem;
+    border: 2px solid rgb(0, 98, 255);
+}
+.gambar-skills .react a {
+    color: rgb(0, 98, 255);
+    font-size: 3rem;
+}
 .content-skills .hereme-skills {
     background-color: var(--var);
     margin: 45px auto;
@@ -385,7 +399,7 @@ header #hamburger-menu:hover {
     width: 170px;
 }
 .gambar-skills .html, .css, .python, 
-.php, .javaScript, .bootsrap {
+.php, .javaScript, .bootsrap, .react {
     animation: mengambang 4s ease-in-out infinite;
 }
 @keyframes mengambang {

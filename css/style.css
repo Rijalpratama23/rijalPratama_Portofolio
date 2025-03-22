@@ -33,12 +33,13 @@ header {
 .paragrap-hero h1, h3 {
     font-size: 1.7rem;
 }
-header .logo img{
+header .logo  a h1{
+    font-family: "Karla", sans-serif;
     font-weight: bold;
-    color: var(--white);
-    width: 80px;
-    height: 80px;
+    color: var(--var);
     cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--white);
 }
 span {
     color: var(--var)
@@ -389,6 +390,10 @@ header #hamburger-menu:hover {
 .gambar-skills .react a {
     color: rgb(0, 98, 255);
     font-size: 3rem;
+}
+.gambar-skills .react a:hover {
+    color: var(--var);
+    transition: .3s ease-in-out;
 }
 .content-skills .hereme-skills {
     background-color: var(--var);
@@ -769,6 +774,13 @@ footer .credit a {
     .content-utama .content {
         display: block;
         padding: 30px;
+    }
+    .gambar-skills .react {
+        width: 200px;
+    }
+    .gambar-skills .react a{
+        display: flex;
+        justify-content: center;
     }
     .linkdetail {
         display: flex;

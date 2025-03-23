@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- link icon bar di Browser -->
@@ -41,7 +43,7 @@
     <main>
         <!-- STAR HERO -->
         <section class="hero">
-            <div class="paragrap-hero">
+            <div class="paragrap-hero" data-aos="fade-right">
                 <h3>Hallo, I'm Rijal Pratama</h3>
                 <h1>I'm a <span class="span"></span></h1>
                 <p>I am a full stack developer and 
@@ -49,7 +51,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
                     Cupiditate, possimus?
                 </p>
-                <div class="sosial-media">
+                <div class="sosial-media" data-aos="fade-right">
                     <a href="https://www.facebook.com/rijal.pratama.1865904/" target="_blank">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
@@ -64,7 +66,7 @@
                     </a>
                 </div>
             </div>
-            <figure class="gambar-hero">
+            <figure class="gambar-hero" data-aos="fade-left">
                 <img src="asset/gambar 1.jpg" alt="poto">
             </figure>
         </section>
@@ -74,10 +76,10 @@
         <section class="about" id="about">
             <h2>About <span>Me</span></h2>
             <div class="content-about">
-                <figure class="gambar-about">
+                <figure class="gambar-about" data-aos="fade-right">
                     <img src="asset/gambar 2 - Copy.jpg" alt="poto">
                 </figure> 
-                <div class="paragrap-about">
+                <div class="paragrap-about" data-aos="fade-left">
                     <p>I am Rijal Pratama, I am a Full Stack Developer, currently I am studying at one of the universities in Sukabumi, namely Nusa Putra University. I am taking the Informatics Engineering Study Program.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi itaque facere doloremque esse iste rerum cumque harum amet tempore.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, officia voluptate. In neque soluta qui?
@@ -95,7 +97,7 @@
                 <div class="paragrap-skills">
                     <p>Here are the skills I have :</p>
                 </div>
-                <div class="gambar-skills">
+                <div class="gambar-skills" data-aos="flip-left">
                     <div class="html">
                         <a href="https://www.w3schools.com/html/" target="_blank">
                             <i class="fa-brands fa-html5"></i>
@@ -142,7 +144,7 @@
         <!-- Sertification STAR -->
         <section class="sertification" id="sertification">
             <h2>Sertifi<span>cation</span></h2>
-            <div class="container-sertification">
+            <div class="container-sertification" data-aos="fade-up">
                 <div class="container-content">
                     <!-- sertifikat 1 -->
                     <div class="content-sertifikat">
@@ -176,7 +178,7 @@
         <!-- STAR EDUCATION -->
         <section class="education" id="education">
             <h2>My<span> Education</span></h2>
-            <div class="container-education">
+            <div class="container-education" data-aos="fade-up">
                 <div class="content-utama">
                     <div class="content" id="container-smk">
                         <img src="asset/gambarSmkBaru.jpg" alt="poto">
@@ -187,7 +189,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="content">
+                    <div class="content" data-aos="fade-up">
                         <img src="asset/gedung kampus.jpg" alt="poto">
                         <div class="asset">
                             <h3><span>Universitas Nusa Putra</span></h3>
@@ -215,7 +217,7 @@
             <p>If you want to contact me or want to give suggestions for the development 
                 <br>of this website, please contact me below:
             </p>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.60965064788!2d107.56075490416707!3d-6.
             903271951728813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung
             %2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1721742490643!5m2!1sid!2sid" 
@@ -265,5 +267,9 @@
     </main>
     <!-- link js -->
     <script src="js/script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

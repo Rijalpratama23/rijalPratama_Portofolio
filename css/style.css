@@ -802,6 +802,9 @@ footer .credit a {
         flex-wrap: wrap;
         border-radius: 15px;
     }
+    .row iframe {
+        width: 340px;
+    }
     footer {
         min-height: 8vh;
     }

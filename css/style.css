@@ -796,6 +796,7 @@ footer .credit a {
     .smk span, .univers span {
         display: none;
     }
+    
     .contact .row {
         display: block;
         flex-wrap: wrap;

@@ -12,6 +12,7 @@
 }
 body {
     font-family: 'Montserrat';
+    box-sizing: border-box;
 }
 
 /* Header style */
@@ -743,6 +744,9 @@ footer .credit a {
     }
     br {
         display: none;
+    }
+    .about {
+        max-width: 357px;
     }
     .about .content-about {
         display: block;

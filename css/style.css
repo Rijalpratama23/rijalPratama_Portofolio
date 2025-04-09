@@ -149,19 +149,19 @@ header #hamburger-menu:hover {
 }
 @keyframes words {
     0%,20% {
-        content: "Youtuber";
+        content: "FrontEnd";
     }
     21%,40% {
-        content: "web Dev";
+        content: "Web";
     }
     41%,60% {
-        content: "UI/UX";
+        content: "Developer";
     }
     61%,80% {
-        content: "BackEnd";
+        content: "Tiktoker";
     }
     81%,100% {
-        content: "FrontEnd";
+        content: "Youtuber";
     }
 }
 @keyframes typing {

@@ -34,13 +34,17 @@ header {
 .paragrap-hero h1, h3 {
     font-size: 1.7rem;
 }
-header .logo  a h1{
+header .logo{
     font-family: "Karla", sans-serif;
     font-weight: bold;
     color: var(--var);
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: var(--white);
+}
+header .logo img {
+    width: 90px;
+    width: 90px;
 }
 span {
     color: var(--var)
@@ -183,12 +187,35 @@ header #hamburger-menu:hover {
 .sosial-media {
     display: flex;
 }
-.sosial-media a {
+.sosial-media .facebook {
     text-decoration: none;
     font-size: 1.7rem;
-    color: var(--var);
+    color: rgb(29, 103, 242);
     display: flex;
 }
+.sosial-media .instagram i {
+    text-decoration: none;
+    font-size: 1.7rem;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    display: flex;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    margin-top: 11px;
+}
+.sosial-media .github {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #e5e2e2;
+    display: flex;
+}
+.sosial-media .linkedin {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: rgb(27, 102, 252);
+    display: flex;
+}
+
 .sosial-media a:hover {
     color: var(--white);
     border-radius: 100%;
